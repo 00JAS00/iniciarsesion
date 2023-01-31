@@ -25,7 +25,7 @@
           <div class="top-row">
             <div class="field-wrap">
               <label>
-                Primer <span class="req">*</span>
+                Primer nombre <span class="req">*</span>
               </label>
               <input type="text" name="nombre"id="nombre" required autocomplete="off"/>
             </div>
