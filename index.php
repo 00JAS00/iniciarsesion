@@ -57,7 +57,7 @@
           </form>
 
         </div>
-        
+        <!-- lo comente porque no llegue a hacer el inicio -->
     <!--     <div id="login">   
           <h1>Inicia y Reclama tu premio</h1>
           
