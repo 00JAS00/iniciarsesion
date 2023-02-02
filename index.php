@@ -52,7 +52,7 @@
             <input type="password"name="contrasena" class="contrasena"required autocomplete="off"/>
           </div>
           
-          <button type="submit" class="button button-block">Terminar registro</button>
+          <button type="submit" name="envio"class="button button-block">Terminar registro</button>
           
           </form>
 
