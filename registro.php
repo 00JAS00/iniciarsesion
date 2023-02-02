@@ -18,12 +18,6 @@
         $dbh = new PDO($dsn, $user, $password);
     
         $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        if (!$dbh) {
-          echo'<script>alert("conexion fallida")</script>';
-        }
-        else{
-          echo'<script>alert("conexion exitosa")</script>';
-        }
     }catch(PDOException $e){
         echo $e->getMessage();
     } 
@@ -37,18 +31,18 @@
 
 
   
-$nombre=$_POST['nombre'];
-$apellido=$_POST['apellido'];
-$email=$_POST['email'];
-$contrasena=$_POST['contrasena'];
-$stmt->bindParam(1,$nombre);
-$stmt->bindParam(2,$apellido);
-$stmt->bindParam(3,$email);
-$stmt->bindParam(4,$contrasena);
-  // Excecute
+    $nombre=$_POST['nombre'];
+    $apellido=$_POST['apellido'];
+    $email=$_POST['email'];
+    $contrasena=$_POST['contrasena'];
+    $stmt->bindParam(1,$nombre);
+    $stmt->bindParam(2,$apellido);
+    $stmt->bindParam(3,$email);
+    $stmt->bindParam(4,$contrasena);
+  
+    // Excecute
 
-  $stmt->execute();
-  echo '<script>alert("llegaron los datos")</script>';
+    $stmt->execute();
   }
   else{
     echo'<script>alert("no se cargaron los datos")</script>';
@@ -60,10 +54,12 @@ $stmt->bindParam(4,$contrasena);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/registro.css">
+    <title>TU PREMIO AQUI</title>
 </head>
 <body>
-    <h1>registro completo has sido hackeado</h1>
-    <script>alert("has sido hackeado jeje")</script>
+  <div>
+    <script>alert('Felizidades Tu Premio es este hermoso pisaje')</script>
+  </div>    
+
 </body>
-</html>
