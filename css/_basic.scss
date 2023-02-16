@@ -1,0 +1,17 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+  
+html {
+    width: 100vw;
+    height: 100vh;
+}
+  
+body {
+    background: #b4ab99;
+    font-family: 'Titillium Web', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}

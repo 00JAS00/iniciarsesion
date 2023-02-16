@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <title>Reclama tu premio</title>
+  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <header>
+      <div class="logo">
+        <a href=""><img src="./img/logo api.png" alt="logo-nav"></a>
+      </div>
+      <nav>
+        <ul class="navbar">
+          <li><a href="#singup">registrarse</a></li>
+          <li><a href="">quien soy</a></li>
+        </ul>
+      </nav>
+      
+    </header>
+    <main>
+      <div class="form">
+
+            <!-- BOTON DE REGISTRO -->
+
+            <ul class="tab-group">
+              <li class="tab active"><a href="#signup">Registrarse</a></li>
+              <!-- <li class="tab"><a href="#login">Ingresar</a></li> -->
+            </ul>
+      
+            <div class="tab-content">
+              <div id="signup">   
+                <h1>Registrate para ganar un premio</h1>
+                
+                <!-- FORMULARIO DE REGISTRO -->
+
+                <form action="registro.php" method="post">
+                
+                <div class="top-row"> <!-- FILA DE NOMBRE Y APELLIDO -->
+
+                  <!-- NOMBRE -->
+
+                  <div class="field-wrap">
+                    <label for="nombre">
+                      Nombre <span class="req">*</span>
+                    </label>
+                    <input type="text" name="nombre"id="nombre" required autocomplete="off"/>
+                  </div>
+                
+                  <!--APELLIDO -->
+
+                  <div class="field-wrap">
+                    <label for="apellido">
+                      Apellido<span class="req">*</span>
+                    </label>
+                    <input type="text" name="apellido"id="apellido" required autocomplete="off"/>
+                  </div>
+                </div>
+                
+                <!-- EMAIL -->
+
+                <div class="field-wrap">
+                  <label for="email">
+                    Email<span class="req">*</span>
+                  </label>
+                  <input type="email" name="email" required autocomplete="off"/>
+                </div>
+                
+                <!-- ESTABLECER CLAVE -->
+
+                <div class="field-wrap">
+                  <label for="password">
+                    Establece una clave<span class="req">*</span>
+                  </label>
+                  <input type="password" name="contrasena" class="contrasena"required autocomplete="off"/>
+                </div>
+                
+                <button type="submit" name="envio" class="button button-block">Terminar registro</button>
+                
+                </form>
+              
+              </div>
+      </div>
+    </main>
+    <footer>
+      <p>derechos reservados a sosa julian</p>
+    </footer>
+
+
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script  src="./script.js"></script>
+
+</body>
+</html>
+

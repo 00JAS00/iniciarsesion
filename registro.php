@@ -59,7 +59,7 @@
 </head>
 <body>
   <div>
-    <script>alert('Felizidades Tu Premio es este hermoso pisaje')</script>
+    <script>alert('Felizidades Tu Premio es este hermoso paisaje')</script>
   </div>    
 
 </body>

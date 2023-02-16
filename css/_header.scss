@@ -1,0 +1,36 @@
+/* HEADER */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(19, 35, 47, 0.9);
+}
+      /* LOGO  */
+.logo>a>img{
+    padding-left: 1rem;
+    width:11rem;
+}
+
+
+      /* NAVBAR */
+
+.navbar{
+    list-style: none;
+    display: flex;
+    gap:1rem;
+    padding-right: 1rem;
+    
+    li:hover{
+        height: 100%;
+    }
+    a{
+    color: #179b77;
+    text-transform: capitalize;
+        &:hover{
+        background-color: #179b77;
+        color: white;
+        padding: 0.5rem;
+        }
+    }
+
+}

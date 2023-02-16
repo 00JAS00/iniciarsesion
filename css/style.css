@@ -1,21 +1,70 @@
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(19, 35, 47, 0.9);
+}
+
+/* LOGO  */
+.logo > a > img {
+  padding-left: 1rem;
+  width: 11rem;
+}
+
+/* NAVBAR */
+.navbar {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding-right: 1rem;
+}
+.navbar li:hover {
+  height: 100%;
+}
+.navbar a {
+  color: #179b77;
+  text-transform: capitalize;
+}
+.navbar a:hover {
+  background-color: #179b77;
+  color: white;
+  padding: 0.5rem;
+}
+
 *, *:before, *:after {
   box-sizing: border-box;
 }
 
 html {
-  overflow-y: scroll;
+  width: 100vw;
+  height: 100vh;
 }
 
 body {
   background: #b4ab99;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
+footer {
+  background: rgba(19, 35, 47, 0.9);
+  text-align: center;
+  color: #179b77;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+/* MAIN */
 a {
   text-decoration: none;
   color: #1ab188;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
+
 a:hover {
   color: #179b77;
 }
@@ -34,11 +83,13 @@ a:hover {
   padding: 0;
   margin: 0 0 40px 0;
 }
+
 .tab-group:after {
   content: "";
   display: table;
   clear: both;
 }
+
 .tab-group li a {
   display: block;
   text-decoration: none;
@@ -50,12 +101,14 @@ a:hover {
   width: 50%;
   text-align: center;
   cursor: pointer;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
+
 .tab-group li a:hover {
   background: #179b77;
   color: #ffffff;
 }
+
 .tab-group .active a {
   background: #1ab188;
   color: #ffffff;
@@ -82,6 +135,7 @@ label {
   pointer-events: none;
   font-size: 22px;
 }
+
 label .req {
   margin: 2px;
   color: #1ab188;
@@ -92,6 +146,7 @@ label.active {
   left: 2px;
   font-size: 14px;
 }
+
 label.active .req {
   opacity: 0;
 }
@@ -111,8 +166,9 @@ input, textarea {
   border: 1px solid #a0b3b0;
   color: #ffffff;
   border-radius: 0;
-  transition: border-color .25s ease, box-shadow .25s ease;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
+
 input:focus, textarea:focus {
   outline: 0;
   border-color: #1ab188;
@@ -133,11 +189,13 @@ textarea {
   display: table;
   clear: both;
 }
+
 .top-row > div {
   float: left;
   width: 48%;
   margin-right: 4%;
 }
+
 .top-row > div:last-child {
   margin: 0;
 }
@@ -150,12 +208,13 @@ textarea {
   font-size: 2rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   background: #1ab188;
   color: #ffffff;
   transition: all 0.5s ease;
   -webkit-appearance: none;
 }
+
 .button:hover, .button:focus {
   background: #179b77;
 }
@@ -168,4 +227,4 @@ textarea {
 .forgot {
   margin-top: -20px;
   text-align: right;
-}
+}/*# sourceMappingURL=style.css.map */
